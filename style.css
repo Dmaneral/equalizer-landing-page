@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    /* background-image: url(./starter-code/assets/bg-main-mobile.png); */
+    background-color: #FCFAF9;
+    background-position: left top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.mobile {
+    top: -250px;
+    right: -200px;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+header #logo {
+    margin: 40px 0 64px 0;
+}
+
+header {
+    padding: 0 24px 68px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #191826;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #191826;
+}
+
+.content {
+    position: relative;
+    padding-top: 84px;
+}
+
+.pattern-cont {
+    background-color: #191826;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+#app-img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    
+}
+
+.info-cont {
+    background-color: #FA7453;
+    border-radius: 12px;
+    position: relative;
+    top: -20px;
+    color: #FCFAF9;
+    padding: 48px 42px 48px 42px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 12px;
+}
+
+.info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FCFAF9;
+    padding-bottom: 36px;
+}
+
+h3 {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ios {
+    background-color: #191826;
+    color: white;
+}
+
+.android {
+    background-color: #FCFAF9;
+    color: #191826;
+}
+
+.btn {
+    height: 61px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+}
+
+.btn img {
+    margin-right: 8px;
+}
+
+.last {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #191826;
+}
+
+.last span {
+    font-weight: 700;
+}
+
+footer {
+    padding: 63px 24px 80px 24px;
+}
+
+footer #logo {
+    padding-bottom: 32px;
+}
+
+footer p {
+    padding-bottom: 64px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+/* ---- Tablet ---- */
+
+@media screen  and (min-width: 768px){
+    body {
+        background-image: url(./starter-code/assets/bg-pattern-1.svg); 
+        background-position: right -8% top -2%;
+        background-size: 33%;
+    } 
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: inline;
+        right: -20px;
+    }
+
+    h1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        width: 70%;
+        padding: 0 0 28px 29px
+    }
+
+    header {
+        padding-bottom: 150px;
+    }
+
+    header #logo {
+        padding: 64px 0 95px 29px;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 18px;
+        font-weight: 400;
+        width: 65%;
+        padding: 0 0 111px 29px
+    }
+
+    .content {
+        margin-left: 33px;
+        margin-right: 33px;
+        padding: 0;
+    }
+
+    #app-img {
+        width: 40%;
+        left: 64px;
+        top: -130px;
+        margin: 0;
+    }
+
+    .info-cont {
+        width: 55%;
+        position: absolute;
+        top: 30%;
+        right: 10%;
+    }
+
+    .pattern-cont {
+        border-radius: 12px;
+        padding: 50px 0 130px 0;
+    }
+
+    footer {
+        padding: 167px 33px 85px 33px;
+    }
+
+    footer p {
+        width: 50%;
+        padding: 0;
+    }
+
+    .social-media {
+        height: max-content;
+    }
+
+    .foot-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
