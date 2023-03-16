@@ -202,7 +202,8 @@ footer p {
 
     .tablet {
         display: inline;
-        right: -20px;
+        right: -20%;
+        bottom: -10%;
     }
 
     h1 {
@@ -271,5 +272,89 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+/* ---- Desktop ---- */
+
+@media screen and (min-width: 1024px){
+    body {
+        background-position: right 0 top -2%;
+        background-size: 20%;
+    } 
+    header {
+        padding: 0;
+        padding-bottom: 116px;
+    }
+
+    header #logo {
+        padding: 61px 0 107px 116px;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 88px;
+        width: 70%;
+        padding: 0 0 40px 116px;
+    }
+
+    header p {
+        padding: 0 0 127px 116px;
+    }
+
+    #app-img {
+        width: 25%;
+    }
+
+    .content {
+        margin-left: 116px;
+        margin-right: 116px;
+    }
+
+    .info-cont {
+        padding: 58px 56px 48px 56px;
+        width: 40%;
+    }
+
+    footer {
+        display: flex;
+        padding: 202px 116px 87px 116px;
+        gap: 100px;
+    }
+
+    footer #logo {
+        height: max-content;
+    }
+
+    .foot-content {
+        align-items: flex-start;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
+        top: -40%;
+        right: -26%;
+    }
+
+    /* ---- Active ---- */
+
+    .ios:hover {
+        background-color: #66E2DC;
+        cursor: pointer;
+    }
+
+    .android:hover {
+        background-color: #FFB964;
+        cursor: pointer;
+    }
+
+    svg path:hover {
+        fill: #FA7453;
+        cursor: pointer;
     }
 }
